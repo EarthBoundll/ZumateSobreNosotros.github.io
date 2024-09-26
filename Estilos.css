@@ -1,0 +1,194 @@
+/* Diseño Moderno */
+body {
+    font-family: 'Poppins', sans-serif; /* Tipografía más moderna */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo general */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #333333;
+}
+
+header {
+    background: linear-gradient(45deg, #5433bf, #e8491d); /* Gradiente moderno */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* Fijar el header */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que el header esté en la parte superior */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.top-bar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500; /* Aumenta la visibilidad */
+    transition: color 0.3s ease; /* Transición suave */
+}
+
+.top-bar a:hover {
+    color: #e8491d; /* Color de hover más destacado */
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%; /* Bordes redondeados */
+}
+
+nav {
+    margin-left: auto;
+    padding: 0 20px;
+}
+
+.menu-bar a {
+    color: #5433bf;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    border-radius: 5px; /* Bordes suaves */
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.menu-bar a:hover {
+    background: #5433bf;
+    color: #ffffff;
+}
+
+.container {
+    flex: 1;
+    padding: 140px 20px 20px; /* Añade espacio para evitar superposición con el header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f8f8f8; /* Fondo más suave */
+}
+
+.section {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 20px; /* Bordes más suaves */
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra más fuerte */
+    width: 80%;
+    flex-direction: column;
+    transition: transform 0.3s ease; /* Animación suave al hacer hover */
+}
+
+.section:hover {
+    transform: translateY(-10px); /* Movimiento al hacer hover */
+}
+
+.section h2, .section h3 {
+    color: #5433bf;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.section p {
+    font-size: 1.1em;
+    color: #666666; /* Color de texto más suave */
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px; /* Bordes redondeados */
+    transition: opacity 0.3s ease;
+}
+
+.section img:hover {
+    opacity: 0.9; /* Efecto hover en la imagen */
+}
+
+footer {
+    background: #5433bf;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px; /* Más espacio alrededor del footer */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave en el footer */
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .footer-services a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+footer .footer-services a:hover {
+    color: #e8491d;
+    text-decoration: underline;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Colores para secciones específicas */
+#sobre-nosotros {
+    background-color: #00bcd4; /* Celeste brillante */
+    flex-direction: row;
+}
+
+#vision {
+    background-color: #ffc107; /* Amarillo moderno */
+    flex-direction: row-reverse;
+}
+
+#mision {
+    background-color: #ff5722; /* Rojo vibrante */
+    flex-direction: row;
+}
+
+#valores {
+    background-color: #673ab7; /* Un toque de morado para variar */
+    flex-direction: row-reverse;
+}
