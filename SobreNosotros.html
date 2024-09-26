@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Fondo general */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: #5433bf;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed; /* Fijar el header */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Asegura que el header esté en la parte superior */
+        }
+        .top-bar {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .top-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .menu-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 2px 0;
+            background: #ffffff;
+        }
+        .logo img {
+            width: 110px;
+            height: 110px;
+        }
+        nav {
+            margin-left: auto;
+            padding: 20px;
+        }
+        .menu-bar a {
+            color: #000;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        .menu-bar a:hover {
+            background: #e8491d;
+        }
+        .container {
+            flex: 1;
+            padding: 120px 20px 20px; /* Añade espacio para evitar superposición con el header */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            animation: fadeIn 0.5s ease-in-out;
+            border-radius: 10px; /* Bordes redondeados para las secciones */
+            padding: 20px;
+            color: #ffffff; /* Color de texto */
+        }
+        .section img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-left: 20px;
+        }
+        .section:nth-child(odd) {
+            background-color: #4caf50; /* Verde para secciones impares */
+            flex-direction: row;
+        }
+        .section:nth-child(even) {
+            background-color: #2196F3; /* Azul para secciones pares */
+            flex-direction: row-reverse;
+        }
+        h2, h3 {
+            margin: 20px 0; /* Aumenta el margen inferior */
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5em; /* Títulos más grandes */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para títulos */
+        }
+        footer {
+            padding: 20px;
+            background: #5433bf;
+            color: #ffffff;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        .footer-content {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+        .logo-footer {
+            text-align: center;
+            margin-right: 20px;
+        }
+        .footer-info {
+            text-align: right;
+            margin-left: auto;
+        }
+        .footer-services {
+            text-align: center;
+            margin-top: 5px;
+        }
+        .footer-services a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer-services a:hover {
+            text-decoration: underline;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="top-bar">
+        <div>
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="Redesociales.html">Redes Sociales</a>
+            <a href="https://www.facebook.com/people/ONG-Zumate/61565989621254/?sk=about" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@ongzumate?_t=8poHNn0lPOg&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.instagram.com/ongzumate/?igsh=eTlyZXk2YzZ3a2t1" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <div class="menu-bar">
+        <div class="logo">
+            <img src="Imagenes/Logo Zumate.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html">INICIO</a>
+            <a href="sobre_nosotros.html">SOBRE NOSOTROS</a>
+            <a href="#Programa">PROGRAMA</a>
+            <a href="#¿Cómo ayudar">¿CÓMO AYUDAR?</a>
+            <a href="#Blog">BLOG</a>
+            <a href="#Contacto">CONTACTO</a>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>Desde sus humildes comienzos, esta organización se ha dedicado incansablemente a proporcionar educación, salud y ayuda humanitaria 
+            integral en situaciones de emergencia y a largo plazo. Sus proyectos abarcan desde intercambios culturales, capacitaciones, charlas, 
+            eventos sociales, entre otros hasta la construcción de infraestructuras sociales y sostenibles con programas integrales. Lo que distingue 
+            a esta ONG es su enfoque holístico y su capacidad para adaptarse a las necesidades cambiantes de las comunidades a las que sirve, a través 
+            de alianzas estratégicas con gobiernos locales, organizaciones internacionales y empresas comprometidas, lo cual ha logrado maximizar el impacto 
+            de cada dólar donado, asegurando que cada contribución se traduzca en un cambio tangible. Con un equipo dedicado de profesionales expertos y 
+            voluntarios apasionados, esta ONG continúa desafiando los límites y encontrando soluciones innovadoras para los desafíos globales más apremiantes.
+             Su compromiso con la dignidad humana, la justicia social y el desarrollo sostenible la convierte en un modelo a seguir en el campo de la ayuda humana.
+              Por lo tanto, la ONG ZUMATE dedicada a la ayuda humanitaria no solo ofrece esperanza donde más se necesita, sino que también inspira a otros a creer 
+              en un mundo donde la compasión y la solidaridad son los motores del mundo.</p>
+        <img src="Imagenes/Fondo.jfif" alt="Sobre Nosotros">
+    </div>
+
+    <div class="section">
+        <h3>Visión</h3>
+        <p>Nuestra visión es ser una organización líder que transforme la vida de la comunidad en situación de vulnerabilidad, reduciendo significativamente los índices
+             de violencia, pandillaje, embarazo adolescente, drogadicción, desnutrición, entre otros. Aspiramos a crear una comunidad próspera donde cada joven cree y tenga 
+             acceso a oportunidades que le permitan un desarrollo integral y una vida digna.</p>
+        <img src="Imagenes/Visiones.jpg" alt="Visión">
+    </div>
+
+    <div class="section">
+        <h3>Misión</h3>
+        <p>Nuestra misión es brindar apoyo integral a niños y adolescentes de escasos recursos de Lima, ofreciendo oportunidades educativas, recreativas y de desarrollo personal,
+             con el fin de prevenir su involucramiento en pandillas juveniles, embarazo adolescente, drogadicción y desnutrición, así como promover su bienestar y el de sus familias.</p>
+        <img src="Imagenes/Mision.jfif" alt="Misión">
+    </div>
+
+    <div class="section">
+        <h3>Valores</h3>
+        <p>Compasión: Actuamos con empatía y comprensión hacia las circunstancias difíciles de los niños y adolescentes que apoyamos.</p>
+        <p>Compromiso: Nos dedicamos incansablemente a mejorar la calidad de vida de los jóvenes y sus familias.</p>
+        <p>Integridad: Mantenemos altos estándares éticos en todas nuestras acciones y decisiones.</p>
+        <p>Inclusión: Fomentamos un entorno inclusivo que respeta y valora la diversidad.</p>
+        <p>Colaboración: Trabajamos en conjunto con comunidades, voluntarios y otras organizaciones para maximizar nuestro impacto.</p>
+        <img src="Imagenes/Valores.jfif" alt="Valores">
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div class="logo-footer">
+            <img src="Imagenes/LogoZumateRedondo.jpeg" alt="Logo" style="width: 150px; height: auto; border-radius: 50%;">
+            <p style="margin: 10;">&copy; 2024 ZUMATE. Todos los derechos reservados.</p>
+        </div>
+        <div class="footer-info">
+            <p style="margin: 0;"><strong>ZUMATE ONG</strong></p>
+            <p style="margin: 0;">Oficina Central: Av. dirección x1234</p>
+            <p style="margin: 0;">Teléfono: +51 999999999</p>
+            <p style="margin: 0;">E-mail: <a href="mailto:Zumate@zumate.org.pe" style="color: #ffffff;">Zumate@zumate.org.pe</a></p>
+        </div>
+    </div>
+    <div class="footer-services">
+        <a href="#Servicios">Servicios</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="#Noticias">Noticias</a>
+        <a href="#Opiniones">Opiniones</a>
+        <a href="#Donar">Donar</a>
+    </div>
+</footer>
+
+</body>
+</html>
